@@ -27,10 +27,30 @@ body
 {
     width: 375px;
     height: 520px;
+    border: 1px solid #e9f6ff;
     background-color: var(--cor2);
     border-radius: 8px;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, .06);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
     padding: 20px;
+    overflow-y: auto;
+}
+
+.champion-container::-webkit-scrollbar
+{
+    width: 7px;
+}
+
+.champion-container::-webkit-scrollbar-track
+{
+    background-color: #d7eeff;
+    border-radius: 25px;
+}
+
+.champion-container::-webkit-scrollbar-thumb
+{
+    background-color: var(--cor1);
+    border: 1px solid;
+    border-radius: 25px;
 }
 
 .champion-container form
@@ -49,4 +69,12 @@ body
     font-size: 16px;
     font-weight: bold;
     padding: 8px 10px;
+}
+
+div.champion
+{
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    margin: 40px 0 0 0;
 }
