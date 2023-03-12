@@ -21,6 +21,14 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.champion-price
+{
+    margin: 4px 0 0 0;
+    display: flex;
 }
 
 .champion-container
@@ -30,9 +38,13 @@ body
     border: 1px solid #e9f6ff;
     background-color: var(--cor2);
     border-radius: 8px;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
     padding: 20px;
     overflow-y: auto;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .champion-container::-webkit-scrollbar
@@ -71,10 +83,28 @@ body
     padding: 8px 10px;
 }
 
-div.champion
+.champion
 {
-    display: grid;
-    justify-content: start;
-    justify-items: start;
+    display: flex;
+    flex-direction: column;
     margin: 40px 0 0 0;
+}
+
+.champion img
+{
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.champion .champion-details h2
+{
+    font-size: 1.25rem;
+    color: #1d1d1d;
+}
+
+.champion .champion-details h3
+{
+    font-size: 1.125rem;
+    color: #1d1d1dd7;
 }
